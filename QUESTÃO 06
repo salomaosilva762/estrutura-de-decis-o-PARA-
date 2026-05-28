@@ -1,0 +1,30 @@
+inteiro numero
+		inteiro maior = 0
+		inteiro menor = 0
+		inteiro i
+
+		escreva("Digite o numero 1: ")
+		leia(numero)
+
+		maior = numero
+		menor = numero
+
+		para (i = 2; i <= 50; i = i + 1)
+		{
+			escreva("Digite o numero ", i, ": ")
+			leia(numero)
+
+			se (numero > maior)
+			{
+				maior = numero
+			}
+
+			se (numero < menor)
+			{
+				menor = numero
+			}
+		}
+
+		escreva("Maior valor: ", maior, "\n")
+		escreva("Menor valor: ", menor, "\n")  
+  }
