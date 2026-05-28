@@ -1,0 +1,13 @@
+inteiro soma = 0
+		inteiro limite
+		inteiro i
+
+		escreva("Digite o numero limite: ")
+		leia(limite)
+
+		para (i = 2; i <= limite; i = i + 2)
+		{
+			soma = soma + i
+		}
+
+		escreva("A soma dos numeros pares e: ", soma)
