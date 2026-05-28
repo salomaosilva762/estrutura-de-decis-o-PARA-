@@ -1,0 +1,33 @@
+inteiro numero
+		inteiro positivos = 0
+		inteiro negativos = 0
+		inteiro zeros = 0
+		inteiro i
+
+		para (i = 1; i <= 20; i = i + 1)
+		{
+			escreva("Digite o numero ", i, ": ")
+			leia(numero)
+
+			se (numero > 0)
+			{
+				positivos = positivos + 1
+			}
+
+			se (numero < 0)
+			{
+				negativos = negativos + 1
+			}
+
+			se (numero == 0)
+			{
+				zeros = zeros + 1
+			}
+		}
+
+		escreva("Quantidade de positivos: ", positivos, "\n")
+		escreva("Quantidade de negativos: ", negativos, "\n")
+		escreva("Quantidade de zeros: ", zeros, "\n") 
+
+  }
+}
