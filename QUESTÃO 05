@@ -1,18 +1,53 @@
-inteiro chico
-		inteiro ze
-		inteiro anos = 0
+inteiro voto
+		inteiro c1 = 0
+		inteiro c2 = 0
+		inteiro c3 = 0
+		inteiro c4 = 0
+		inteiro nulo = 0
+		inteiro branco = 0
+		inteiro i
 
-		escreva("Digite a altura de Chico em centimetros: ")
-		leia(chico)
-
-		escreva("Digite a altura de Ze em centimetros: ")
-		leia(ze)
-
-		enquanto (ze <= chico)
+		para (i = 1; i <= 1000; i = i + 1)
 		{
-			chico = chico + 2
-			ze = ze + 3
-			anos = anos + 1
+			escreva("Digite o codigo do voto: ")
+			leia(voto)
+
+			se (voto == 0)
+			{
+				pare
+			}
+
+			escolha (voto)
+			{
+				caso 1:
+					c1 = c1 + 1
+					pare
+				caso 2:
+					c2 = c2 + 1
+					pare
+				caso 3:
+					c3 = c3 + 1
+					pare
+				caso 4:
+					c4 = c4 + 1
+					pare
+				caso 5:
+					nulo = nulo + 1
+					pare
+				caso 6:
+					branco = branco + 1
+					pare
+			}
 		}
 
-		escreva("Anos necessarios: ", anos)
+		escreva("Total Candidato 1: ", c1, "\n")
+		escreva("Total Candidato 2: ", c2, "\n")
+		escreva("Total Candidato 3: ", c3, "\n")
+		escreva("Total Candidato 4: ", c4, "\n")
+		escreva("Total Nulos: ", nulo, "\n")
+		escreva("Total Brancos: ", branco, "\n")
+  }
+}
+
+
+		
