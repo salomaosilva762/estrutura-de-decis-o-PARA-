@@ -1,0 +1,18 @@
+inteiro chico
+		inteiro ze
+		inteiro anos = 0
+
+		escreva("Digite a altura de Chico em centimetros: ")
+		leia(chico)
+
+		escreva("Digite a altura de Ze em centimetros: ")
+		leia(ze)
+
+		enquanto (ze <= chico)
+		{
+			chico = chico + 2
+			ze = ze + 3
+			anos = anos + 1
+		}
+
+		escreva("Anos necessarios: ", anos)
