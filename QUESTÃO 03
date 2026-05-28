@@ -1,0 +1,35 @@
+inteiro i, filhos, total_filhos = 0
+		real salario, total_salario = 0.0, maior_salario = 0.0, pessoas_ate_100 = 0.0
+		real media_salario, media_filhos, percentual
+
+		para (i = 1; i <= 5; i++)
+		{
+			escreva("Digite o salario da pessoa ", i, ": ")
+			leia(salario)
+			escreva("Digite o numero de filhos da pessoa ", i, ": ")
+			leia(filhos)
+
+			total_salario = total_salario + salario
+			total_filhos = total_filhos + filhos
+
+			se (salario > maior_salario)
+			{
+				maior_salario = salario
+			}
+
+			se (salario <= 100.0)
+			{
+				pessoas_ate_100 = pessoas_ate_100 + 1.0
+			}
+		}
+
+		media_salario = total_salario / 5
+		media_filhos = total_filhos / 5
+		percentual = (pessoas_ate_100 / 5) * 100
+
+		escreva("\nMedia do salario da populacao: R$ ", media_salario)
+		escreva("\nMedia do numero de filhos: ", media_filhos)
+		escreva("\nMaior salario encontrado: R$ ", maior_salario)
+		escreva("\nPercentual de pessoas com salario ate R$100,00:")
+  }
+}
