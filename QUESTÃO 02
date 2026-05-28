@@ -1,0 +1,32 @@
+aracter sexo
+    caracter olhos
+    caracter cabelos
+    inteiro idade
+    
+    inteiro maior_idade = 0
+    inteiro cont_mulheres = 0
+    
+    para (inteiro i = 1; i <= 500; i++) {
+      escreva("Digite o sexo (M/F): ")
+      leia(sexo)
+      
+      escreva("Digite a cor dos olhos (A/V/C): ")
+      leia(olhos)
+      
+      escreva("Digite a cor dos cabelos (L/C/P): ")
+      leia(cabelos)
+      
+      escreva("Digite a idade: ")
+      leia(idade)
+      se (idade > maior_idade) {
+        maior_idade = idade
+      }
+      se (sexo == 'F' e idade >= 18 e idade <= 35 e olhos == 'V' e cabelos == 'L') {
+        cont_mulheres = cont_mulheres + 1
+      }
+    }
+    
+    escreva("A maior idade e: ", maior_idade, "\n")
+    escreva("A quantidade de mulheres especificas e: ", cont_mulheres, "\n")
+  }
+}
